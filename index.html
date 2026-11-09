@@ -3,132 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#174a32">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<meta name="description" content="Наручи домаће — повезујемо газдинства из Велике Плане и околине са купцима у Београду.">
-<title>Наручи домаће — Велика Плана и Београд</title>
-<link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#173f2d">
+<meta name="description" content="Наручи домаће — понуда газдинстава из Велике Плане и околине, са организованим преузимањем у Београду.">
+<title>Наручи домаће | Велика Плана – Београд</title>
 <style>
-:root{--forest:#174a32;--leaf:#236b46;--sage:#edf5ed;--paper:#f5f7f2;--ink:#1c2a21;--muted:#657268;--line:#e0e8df;--gold:#e9bd59}
-*{box-sizing:border-box}
-html,body{height:100%;margin:0}
-body{background:var(--paper);color:var(--ink);font:15px/1.5 Arial,sans-serif;overflow:hidden}
-.app{height:100dvh;max-width:980px;margin:auto;padding:9px;display:flex;flex-direction:column;gap:8px}
-header{flex:none;background:var(--forest);color:#fff;border-radius:14px;padding:11px 15px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:900;letter-spacing:.06em;font-size:17px}.sub{font-size:11px;color:#e2eadf}.leaf{font-size:24px}
-nav{flex:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
-nav button{border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--forest);padding:10px 3px;font-size:12px;font-weight:800;cursor:pointer}
-nav button.active{background:var(--forest);border-color:var(--forest);color:white}
-main{flex:1;min-height:0;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:clamp(14px,3vw,23px);overscroll-behavior:contain}
-.panel{display:none}.panel.active{display:block}
-.eyebrow{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leaf);font-weight:900}
-h1{font:700 clamp(27px,5vw,40px)/1.1 Georgia,serif;color:var(--forest);margin:8px 0 12px}
-h2{font:700 clamp(21px,3.5vw,27px)/1.15 Georgia,serif;color:var(--forest);margin:5px 0 10px}
-h3{font-size:15px;color:var(--forest);margin:0 0 6px}
-p{margin:6px 0;color:var(--muted)}
-.hero{background:var(--sage);border-radius:12px;padding:clamp(16px,4vw,25px)}
-.hero p{max-width:680px;font-size:15px}
-.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.btn{border:0;border-radius:8px;background:var(--forest);color:white;padding:10px 14px;font-weight:800;cursor:pointer}
-.btn.light{background:#fff;color:var(--forest);border:1px solid var(--line)}
-.info{background:#f7f9f5;border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px}
-.product-group{margin:13px 0}
-.product-group h3{border-bottom:1px solid var(--line);padding-bottom:6px}
-.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:7px}
-.product{border:1px solid var(--line);border-radius:9px;padding:10px}
-.product strong{display:block;font-size:13px}
-.farm{font-size:10px;color:var(--muted);margin:2px 0 5px}
-.price{display:flex;justify-content:space-between;gap:8px;border-top:1px dashed var(--line);padding:3px 0;font-size:11px}
-.price b{white-space:nowrap}
-.routes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}
-.route{border:1px solid var(--line);border-radius:9px;padding:10px}
-.route p{font-size:12px}
-.notice{background:#fff8e7;border:1px solid #f0dfb6;border-radius:9px;padding:11px;margin-top:11px;font-size:12px;color:#5b4b25}
-footer{flex:none;text-align:center;color:var(--muted);font-size:10px;padding:1px}
-@media(max-width:560px){
-.app{padding:6px;gap:6px}header{padding:9px 11px}.brand{font-size:15px}
-nav{gap:3px}nav button{font-size:10px;padding:9px 1px}
-main{padding:12px}.products,.routes{grid-template-columns:1fr 1fr;gap:6px}
-.product,.route{padding:8px}.product strong{font-size:12px}
-}
-@media(max-width:360px){nav button{font-size:9px}.products,.routes{grid-template-columns:1fr}}
+:root{--green:#173f2d;--green2:#286344;--mint:#eaf2e9;--cream:#faf9f4;--ink:#202b24;--muted:#68756c;--line:#e3e9e1;--gold:#e8bd62;--white:#fff;--shadow:0 8px 28px #173f2d0d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+button,a{font:inherit}button{cursor:pointer}.wrap{max-width:1060px;margin:auto;padding:0 18px}
+.top{background:var(--green);color:white}.top-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:42px;height:42px;border-radius:14px;background:#ffffff18;display:grid;place-items:center;font-size:23px}.brand strong{display:block;font-size:17px;letter-spacing:.04em}.brand small{display:block;color:#d6e4d9;font-size:12px}.top-link{color:white;text-decoration:none;border:1px solid #ffffff55;border-radius:999px;padding:9px 14px;font-size:13px;font-weight:700}
+main{padding:24px 0 110px}.hero{background:linear-gradient(120deg,#eaf2e9,#f5f2e6);border:1px solid #e1e9df;border-radius:24px;padding:clamp(22px,5vw,48px);position:relative;overflow:hidden}.eyebrow{color:var(--green2);font-size:11px;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.hero h1{font:700 clamp(32px,6vw,54px)/1.08 Georgia,serif;color:var(--green);max-width:720px;margin:12px 0}.hero p{max-width:650px;color:#526258;font-size:17px;margin:0}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.btn{border:0;border-radius:12px;padding:13px 18px;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}.primary{background:var(--green);color:white}.secondary{background:white;color:var(--green);border:1px solid var(--line)}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 34px}.quick button{background:white;border:1px solid var(--line);border-radius:16px;padding:17px;text-align:left;box-shadow:var(--shadow);color:var(--ink);min-height:110px}.quick .ico{font-size:24px;display:block;margin-bottom:8px}.quick b{display:block;color:var(--green);font-size:15px}.quick small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.section{margin:34px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:14px}.section h2{font:700 clamp(25px,4vw,34px)/1.15 Georgia,serif;color:var(--green);margin:5px 0}.section-head p{color:var(--muted);margin:0;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.step,.card{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}.step-num{width:32px;height:32px;border-radius:10px;background:var(--mint);color:var(--green);font-weight:900;display:grid;place-items:center;margin-bottom:10px}.step b{color:var(--green)}.step p{font-size:14px;color:var(--muted);margin:5px 0 0}
+.category-bar{display:flex;gap:8px;overflow:auto;padding:3px 1px 12px;scrollbar-width:thin}.category-bar button{white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:9px 14px;background:white;color:var(--green);font-weight:750;font-size:13px}.category-bar button.active{background:var(--green);border-color:var(--green);color:white}
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product{background:white;border:1px solid var(--line);border-radius:15px;padding:16px;box-shadow:var(--shadow)}.product h3{margin:0;color:var(--green);font-size:17px}.farm{color:var(--muted);font-size:12px;margin:4px 0 11px}.price-row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid #edf0eb;font-size:14px}.price-row b{white-space:nowrap;color:var(--green)}.notice{padding:14px 16px;border-radius:14px;background:#fff7e5;border:1px solid #f0e1bc;color:#68552d;font-size:13px;margin-top:16px}
+.routes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.route{background:white;border:1px solid var(--line);border-radius:15px;padding:17px}.route h3{margin:0 0 6px;color:var(--green);font-size:16px}.route p{margin:0;color:var(--muted);font-size:14px}
+.farms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.farm-card{background:white;border:1px solid var(--line);border-radius:15px;padding:17px}.farm-card h3{color:var(--green);margin:0 0 5px}.farm-card p{font-size:13px;color:var(--muted);margin:0}
+.viber{background:var(--green);color:white;border-radius:20px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.viber h2{color:white;margin:0 0 5px;font:700 25px Georgia,serif}.viber p{color:#dce8df;margin:0;font-size:14px}.viber a{background:white;color:var(--green);text-decoration:none;border-radius:11px;padding:12px 16px;font-weight:850;white-space:nowrap}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 0 12px}
+.bottom{position:fixed;z-index:10;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:8px max(10px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));display:grid;grid-template-columns:repeat(5,1fr);gap:3px}.bottom button{border:0;background:transparent;border-radius:11px;color:#66736a;padding:6px 2px;font-size:10px;font-weight:750}.bottom button span{display:block;font-size:19px;line-height:1.25;margin-bottom:2px}.bottom button.active{background:var(--mint);color:var(--green)}
+.view{display:none}.view.active{display:block}
+@media(max-width:650px){.wrap{padding:0 13px}.top-inner{min-height:66px}.top-link{font-size:11px;padding:8px 10px}.quick{grid-template-columns:repeat(2,1fr);gap:9px}.quick button{min-height:96px;padding:14px}.steps{grid-template-columns:1fr}.products,.routes,.farms{grid-template-columns:1fr}.section{margin:27px 0}.viber{align-items:flex-start;flex-direction:column}.viber a{width:100%}main{padding-top:14px}}
+@media(min-width:651px){.bottom{max-width:720px;left:50%;right:auto;transform:translateX(-50%);width:calc(100% - 30px);border:1px solid var(--line);border-bottom:0;border-radius:16px 16px 0 0}}
 </style>
 </head>
 <body>
-<div class="app">
-<header><div><div class="brand">НАРУЧИ ДОМАЋЕ</div><div class="sub">Велика Плана · Београд</div></div><div class="leaf" aria-hidden="true">🌿</div></header>
-<nav aria-label="Главни мени">
-<button class="active" data-panel="pocetna">Почетна</button>
-<button data-panel="projekat">О пројекту</button>
-<button data-panel="kako">Како ради</button>
-<button data-panel="proizvodi">Производи</button>
-<button data-panel="dostava">Достава</button>
-</nav>
-<main id="content">
-<section class="panel active" id="pocetna">
-<div class="hero">
-<div class="eyebrow">Село · производ · поруџбина · достава · купац</div>
-<h1>Од поља Велике Плане до вашег краја у Београду.</h1>
-<p>Повезујемо газдинства из Велике Плане и околине са људима у Београду који желе домаће производе.</p>
-<div class="actions"><button class="btn" data-open="proizvodi">Погледај производе</button><button class="btn light" data-open="dostava">Где достављамо</button></div>
-</div>
+<header class="top"><div class="wrap top-inner"><div class="brand"><div class="brand-mark">🌿</div><div><strong>НАРУЧИ ДОМАЋЕ</strong><small>Велика Плана · Београд</small></div></div><a class="top-link" href="https://invite.viber.com/?g2=AQBzEMpHOYv%2B1VY%2BFr%2FXK1wAQtohrqpwgZQIP%2FNehuBqGI%2BeL0OR9rkG0OYgMZ04" target="_blank" rel="noopener">Viber заједница ↗</a></div></header>
+<main class="wrap">
+<section class="view active" id="home">
+<div class="hero"><div class="eyebrow">Директна веза села и града</div><h1>Домаће из нашег краја. На дохват руке.</h1><p>Повезујемо газдинства из Велике Плане и околине са људима у Београду. Погледајте понуду, пошаљите поруџбину и преузмите производе на договореном месту.</p><div class="hero-actions"><button class="btn primary" data-go="products">Погледај понуду ↓</button><button class="btn secondary" data-go="pickup">Како преузимам?</button></div></div>
+<div class="quick"><button data-go="products"><span class="ico">🧺</span><b>Понуда производа</b><small>Категорије, паковања и цене</small></button><button data-go="farms"><span class="ico">🏡</span><b>Газдинства</b><small>Људи иза производа</small></button><button data-go="pickup"><span class="ico">📍</span><b>Преузимање</b><small>Зоне и организација тура</small></button><button data-go="how"><span class="ico">📝</span><b>Како наручити</b><small>Од понуде до преузимања</small></button></div>
+<div class="section"><div class="section-head"><div><div class="eyebrow">Једноставно и директно</div><h2>Како функционише?</h2></div></div><div class="steps"><div class="step"><div class="step-num">1</div><b>Погледате понуду</b><p>Упознате се са производима, паковањима и ценама.</p></div><div class="step"><div class="step-num">2</div><b>Пошаљете поруџбину</b><p>Поруџбине се прикупљају и обједињују ради организације довоза.</p></div><div class="step"><div class="step-num">3</div><b>Преузмете производе</b><p>Добијате информацију о договореном месту и времену преузимања.</p></div></div></div>
+<div class="viber"><div><h2>Будите у току са понудом</h2><p>У Viber групи објављујемо актуелну понуду, пријем поруџбина и информације о турама.</p></div><a href="https://invite.viber.com/?g2=AQBzEMpHOYv%2B1VY%2BFr%2FXK1wAQtohrqpwgZQIP%2FNehuBqGI%2BeL0OR9rkG0OYgMZ04" target="_blank" rel="noopener">Придружи се Viber групи ↗</a></div>
 </section>
-<section class="panel" id="projekat">
-<div class="eyebrow">О пројекту</div><h2>Повезујемо село и град.</h2>
-<p>„Наручи домаће“ повезује газдинства из Велике Плане и околине са купцима у Београду.</p>
-<p>Циљ је да домаћи производи са села стигну до купаца једноставнијим путем, уз организовано прикупљање поруџбина и договорено преузимање у Београду.</p>
-<div class="info"><strong>Село → Производ → Поруџбина → Достава → Купац</strong></div>
-</section>
-<section class="panel" id="kako">
-<div class="eyebrow">Једноставно и директно</div><h2>Како функционише</h2>
-<div class="info"><strong>1. Погледате понуду</strong><p>Упознате се са производима и пратите шта је тренутно доступно.</p></div>
-<div class="info"><strong>2. Пошаљете поруџбину</strong><p>Поруџбине се прикупљају и обједињују ради организације туре.</p></div>
-<div class="info"><strong>3. Преузмете производе</strong><p>Добијате информацију о договореном месту и времену преузимања у Београду.</p></div>
-</section>
-<section class="panel" id="proizvodi">
-<div class="eyebrow">Понуда · Ценовник</div><h2>Домаћи производи</h2>
-<p>Један производ — више паковања. Цене су приказане испод назива производа.</p>
-<div class="product-group"><h3>Млеко и млечни производи</h3><div class="products">
-<article class="product"><strong>Домаће млеко</strong><div class="farm">Газдинство: Миша</div><div class="price"><span>Флаша 1 л</span><b>150 дин</b></div><div class="price"><span>Флаша 1,5 л</span><b>225 дин</b></div><div class="price"><span>Флаша 2 л</span><b>300 дин</b></div><div class="price"><span>Балон 6 л</span><b>900 дин</b></div></article>
-<article class="product"><strong>Козије млеко</strong><div class="farm">Газдинство: Славица</div><div class="price"><span>Флаша 2 л</span><b>440 дин</b></div></article>
-<article class="product"><strong>Козија сурутка</strong><div class="farm">Газдинство: Славица</div><div class="price"><span>Флаша 2 л</span><b>300 дин</b></div></article>
-<article class="product"><strong>Козији сир</strong><div class="farm">Газдинство није повезано у бази</div><div class="price"><span>500 г</span><b>650 дин</b></div><div class="price"><span>1 кг</span><b>1.300 дин</b></div></article>
-<article class="product"><strong>Млади пуномасни сир</strong><div class="farm">Газдинство: Миша</div><div class="price"><span>500 г</span><b>400 дин</b></div><div class="price"><span>1 кг</span><b>800 дин</b></div></article>
-<article class="product"><strong>Стари пуномасни сир</strong><div class="farm">Газдинство: Миша</div><div class="price"><span>500 г</span><b>450 дин</b></div><div class="price"><span>1 кг</span><b>900 дин</b></div></article>
-<article class="product"><strong>Домаћи кајмак</strong><div class="farm">Газдинство: Виолета Гавриловић</div><div class="price"><span>200 г</span><b>320 дин</b></div><div class="price"><span>500 г</span><b>800 дин</b></div><div class="price"><span>1 кг</span><b>1.600 дин</b></div></article>
-</div></div>
-<div class="product-group"><h3>Јаја</h3><div class="products"><article class="product"><strong>Домаћа јаја</strong><div class="farm">Газдинство: Верица</div><div class="price"><span>Паковање 10 јаја</span><b>350 дин</b></div></article></div></div>
-<div class="product-group"><h3>Остали домаћи производи</h3><div class="products">
-<article class="product"><strong>Млевени ораси</strong><div class="farm">Газдинство није повезано у бази</div><div class="price"><span>500 г</span><b>600 дин</b></div><div class="price"><span>1 кг</span><b>1.200 дин</b></div></article>
-<article class="product"><strong>Рен</strong><div class="farm">Газдинство није повезано у бази</div><div class="price"><b>850 дин</b></div></article>
-</div></div>
-<div class="product-group"><h3>Пиће</h3><div class="products"><article class="product"><strong>Ракија</strong><div class="farm">Газдинство није повезано у бази</div><div class="price"><b>1.000 дин</b></div></article></div></div>
-<div class="notice">Ценовник је информативан. Приказ производа не потврђује тренутну доступност. Актуелна понуда објављује се у Viber групи.</div>
-</section>
-<section class="panel" id="dostava">
-<div class="eyebrow">Београд · преузимање</div><h2>Где достављамо</h2>
-<p>Преузимање се организује на договореним местима дуж трасе. Активни пунктови и сатница потврђују се за сваку туру.</p>
-<div class="routes">
-<article class="route"><h3>Мали Мокри Луг и Коњарник</h3><p>Устаничка улица · Три солитера · Коњарник</p></article>
-<article class="route"><h3>Шумице и Љермонтова</h3><p>Љермонтова (код СУП-а) · Хотел Србија (пијаца / Макси)</p></article>
-<article class="route"><h3>Трошарина и Бањица</h3><p>Окретница 26 · Трошарина · ТЦ Бањица</p></article>
-<article class="route"><h3>Аутокоманда и Пионир</h3><p>Аутокоманда · Цвијићева · Дворана Пионир (УК „Влада Дивљан“)</p></article>
-<article class="route"><h3>Богословија и Зелени венац</h3><p>Богословија · Вазнесењска црква · Зелени венац ка Тошином бунару</p></article>
-<article class="route"><h3>Бежанија и Сурчин</h3><p>Тошин бунар · Lidl на кружном току Бежаније · Сурчин</p></article>
-</div>
-<div class="notice"><strong>Преузимање:</strong> Нема доставе на кућну адресу нити уласка у зграде и станове. Купац преузима производе код возила. Могуће је преузимање успут по договору, ако се уклапа у руту. Тачна места и сатнице потврђују се за сваку туру.</div>
-</section>
+<section class="view" id="about"><div class="eyebrow">О пројекту</div><h2>Повезујемо село и град.</h2><p>„Наручи домаће“ повезује газдинства из Велике Плане и околине са купцима у Београду. Циљ је да домаћи производи са села стигну до купаца једноставнијим путем, уз организовано прикупљање поруџбина и договорено преузимање у Београду.</p><div class="card" style="margin-top:16px"><b style="color:var(--green)">Село → Производ → Поруџбина → Довоз → Купац</b><p>Не постављамо само огласе. Организујемо понуду и повезујемо поруџбине са стварним довозом.</p></div></section>
+<section class="view" id="how"><div class="eyebrow">Корак по корак</div><h2>Како наручити?</h2><div class="steps"><div class="step"><div class="step-num">1</div><b>Проверите понуду</b><p>Погледајте ценовник и пратите Viber групу за актуелну доступност.</p></div><div class="step"><div class="step-num">2</div><b>Пошаљите поруџбину</b><p>Изаберите производе и доставите податке путем договореног начина наручивања.</p></div><div class="step"><div class="step-num">3</div><b>Сачекајте потврду</b><p>Информације о тури, месту и времену преузимања добијате након организације поруџбина.</p></div></div><div class="notice">Ова страница тренутно приказује информације и ценовник. Не садржи активну корпу нити онлајн плаћање.</div></section>
+<section class="view" id="products"><div class="eyebrow">Информативни ценовник</div><h2>Понуда производа</h2><p>Изаберите категорију да брже пронађете производ. Цене су приказане по паковању.</p><div class="category-bar" id="categories"><button class="active" data-cat="all">Сви производи</button><button data-cat="dairy">Млеко и млечни</button><button data-cat="eggs">Јаја</button><button data-cat="other">Остало</button><button data-cat="drink">Пиће</button></div><div class="products" id="productList">
+<article class="product" data-category="dairy"><h3>Домаће млеко</h3><div class="farm">Газдинство: Миша</div><div class="price-row"><span>Флаша 1 л</span><b>150 дин</b></div><div class="price-row"><span>Флаша 1,5 л</span><b>225 дин</b></div><div class="price-row"><span>Флаша 2 л</span><b>300 дин</b></div><div class="price-row"><span>Балон 6 л</span><b>900 дин</b></div></article>
+<article class="product" data-category="dairy"><h3>Козије млеко</h3><div class="farm">Газдинство: Славица</div><div class="price-row"><span>Флаша 2 л</span><b>440 дин</b></div></article>
+<article class="product" data-category="dairy"><h3>Козија сурутка</h3><div class="farm">Газдинство: Славица</div><div class="price-row"><span>Флаша 2 л</span><b>300 дин</b></div></article>
+<article class="product" data-category="dairy"><h3>Козији сир</h3><div class="farm">Газдинство није повезано у бази</div><div class="price-row"><span>500 г</span><b>650 дин</b></div><div class="price-row"><span>1 кг</span><b>1.300 дин</b></div></article>
+<article class="product" data-category="dairy"><h3>Млади пуномасни сир</h3><div class="farm">Газдинство: Миша</div><div class="price-row"><span>500 г</span><b>400 дин</b></div><div class="price-row"><span>1 кг</span><b>800 дин</b></div></article>
+<article class="product" data-category="dairy"><h3>Стари пуномасни сир</h3><div class="farm">Газдинство: Миша</div><div class="price-row"><span>500 г</span><b>450 дин</b></div><div class="price-row"><span>1 кг</span><b>900 дин</b></div></article>
+<article class="product" data-category="dairy"><h3>Домаћи кајмак</h3><div class="farm">Газдинство: Виолета Гавриловић</div><div class="price-row"><span>200 г</span><b>320 дин</b></div><div class="price-row"><span>500 г</span><b>800 дин</b></div><div class="price-row"><span>1 кг</span><b>1.600 дин</b></div></article>
+<article class="product" data-category="eggs"><h3>Домаћа јаја</h3><div class="farm">Газдинство: Верица</div><div class="price-row"><span>Паковање 10 јаја</span><b>350 дин</b></div></article>
+<article class="product" data-category="other"><h3>Млевени ораси</h3><div class="farm">Газдинство није повезано у бази</div><div class="price-row"><span>500 г</span><b>600 дин</b></div><div class="price-row"><span>1 кг</span><b>1.200 дин</b></div></article>
+<article class="product" data-category="other"><h3>Рен</h3><div class="farm">Газдинство није повезано у бази</div><div class="price-row"><b>850 дин</b></div></article>
+<article class="product" data-category="drink"><h3>Ракија</h3><div class="farm">Газдинство није повезано у бази</div><div class="price-row"><b>1.000 дин</b></div></article>
+</div><div class="notice">Ценовник је информативан и не потврђује тренутну доступност. Актуелна понуда и пријем поруџбина објављују се у Viber групи.</div></section>
+<section class="view" id="farms"><div class="eyebrow">Људи иза производа</div><h2>Газдинства у понуди</h2><p>Овде су наведена само имена газдинстава која су повезана са производима у тренутној евиденцији. Детаљније приче и подаци биће додати када буду потврђени.</p><div class="farms" style="margin-top:16px"><div class="farm-card"><h3>Миша</h3><p>Домаће млеко, млади и стари пуномасни сир.</p></div><div class="farm-card"><h3>Славица</h3><p>Козије млеко и козија сурутка.</p></div><div class="farm-card"><h3>Виолета Гавриловић</h3><p>Домаћи кајмак.</p></div><div class="farm-card"><h3>Верица</h3><p>Домаћа јаја.</p></div></div><div class="notice">За неке производе газдинство још није повезано у евиденцији. Нећемо нагађати ко их производи.</div></section>
+<section class="view" id="pickup"><div class="eyebrow">Београд · организовано преузимање</div><h2>Где се преузимају производи?</h2><p>Преузимање се организује на договореним местима дуж трасе. Активни пунктови и сатница потврђују се за сваку туру — списак испод представља предложене зоне, не гаранцију да је свака локација активна у свакој тури.</p><div class="routes" style="margin-top:16px"><article class="route"><h3>Мали Мокри Луг и Коњарник</h3><p>Устаничка улица · Три солитера · Коњарник</p></article><article class="route"><h3>Шумице и Љермонтова</h3><p>Љермонтова (код СУП-а) · Хотел Србија (пијаца / Макси)</p></article><article class="route"><h3>Трошарина и Бањица</h3><p>Окретница 26 · Трошарина · ТЦ Бањица</p></article><article class="route"><h3>Аутокоманда и Пионир</h3><p>Аутокоманда · Цвијићева · Дворана Пионир (УК „Влада Дивљан“)</p></article><article class="route"><h3>Богословија и Зелени венац</h3><p>Богословија · Вазнесењска црква · Зелени венац ка Тошином бунару</p></article><article class="route"><h3>Бежанија и Сурчин</h3><p>Тошин бунар · Lidl на кружном току Бежаније · Сурчин</p></article></div><div class="notice"><b>Важно:</b> Ово није достава на кућну адресу. Купац преузима производе код возила на потврђеном месту и у договорено време. Могуће је преузимање успут, по договору, ако се уклапа у руту.</div></section>
+<section class="section"><div class="viber"><div><h2>Питања и актуелне информације</h2><p>Пратите Viber групу за објаве о понуди, поруџбинама и наредном довозу.</p></div><a href="https://invite.viber.com/?g2=AQBzEMpHOYv%2B1VY%2BFr%2FXK1wAQtohrqpwgZQIP%2FNehuBqGI%2BeL0OR9rkG0OYgMZ04" target="_blank" rel="noopener">Отвори Viber ↗</a></div></section>
+<footer>Наручи домаће · Велика Плана — Београд</footer>
 </main>
-<footer>Наручи домаће · Велика Плана — Београд · <a href="https://invite.viber.com/?g2=AQBzEMpHOYv%2B1VY%2BFr%2FXK1wAQtohrqpwgZQIP%2FNehuBqGI%2BeL0OR9rkG0OYgMZ04" target="_blank" rel="noopener" style="color:var(--forest);font-weight:700">Viber група</a></footer>
-</div>
+<nav class="bottom" aria-label="Главна навигација"><button class="active" data-tab="home"><span>⌂</span>Почетна</button><button data-tab="products"><span>🧺</span>Понуда</button><button data-tab="farms"><span>🏡</span>Газдинства</button><button data-tab="pickup"><span>📍</span>Преузимање</button><button data-tab="about"><span>ℹ</span>Пројекат</button></nav>
 <script>
-const tabs=[...document.querySelectorAll('nav button[data-panel]')];
-const panels=[...document.querySelectorAll('.panel')];
-function showPanel(id){panels.forEach(p=>p.classList.toggle('active',p.id===id));tabs.forEach(t=>t.classList.toggle('active',t.dataset.panel===id));document.getElementById('content').scrollTop=0;}
-tabs.forEach(t=>t.addEventListener('click',()=>showPanel(t.dataset.panel)));
-document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>showPanel(b.dataset.open)));
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
+const tabs=[...document.querySelectorAll('[data-tab]')],views=[...document.querySelectorAll('.view')];
+function openView(id){views.forEach(v=>v.classList.toggle('active',v.id===id));tabs.forEach(t=>t.classList.toggle('active',t.dataset.tab===id));window.scrollTo({top:0,behavior:'smooth'});}
+tabs.forEach(t=>t.addEventListener('click',()=>openView(t.dataset.tab)));
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>openView(b.dataset.go)));
+document.querySelectorAll('[data-cat]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-cat]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.product').forEach(p=>p.hidden=b.dataset.cat!=='all'&&p.dataset.category!==b.dataset.cat);}));
 </script>
-</body>
-</html>
+</body></html>
