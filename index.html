@@ -81,7 +81,7 @@ main{padding:28px 0 116px;min-height:calc(100vh - 78px)}
 .phone-entry{margin-top:9px;border:1px solid #e3eae5;border-radius:20px;padding:7px 10px;color:#9aa69e;font-size:9px}
 @media(max-width:700px){.viber{grid-template-columns:1fr;gap:22px}.viber-phone{width:215px}.viber a{width:100%}}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 0 12px}
-.bottom{position:fixed;z-index:20;bottom:0;left:0;right:0;background:#fffF;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line);padding:9px max(12px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;box-shadow:0 -6px 22px #10281F0a}
+.bottom{position:fixed;z-index:20;bottom:0;left:0;right:0;background:#fffF;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line);padding:9px max(12px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;box-shadow:0 -6px 22px #10281F0a}
 .bottom button{border:0;background:transparent;border-radius:13px;color:#66736a;padding:7px 2px 6px;font-size:11px;font-weight:750;line-height:1.25;min-width:0;transition:.18s}
 .bottom button span{display:block;font-size:20px;line-height:1.25;margin-bottom:4px}
 .bottom button.active{background:var(--mint);color:var(--green)}
@@ -129,7 +129,7 @@ main{padding-top:16px}
 .product .price-row b{font-size:11px}
 }
 
-.price-row{align-items:center}.qty-control{display:inline-flex;align-items:center;gap:7px;flex-shrink:0}.qty-control button{width:27px;height:27px;border:1px solid var(--line);border-radius:8px;background:#f6fbf7;color:var(--green);font-weight:900;font-size:17px;line-height:1}.qty-control output{min-width:15px;text-align:center;font-weight:800;color:var(--green);font-size:13px}.order-builder{margin:20px 0;padding:19px;background:#fff;border:2px solid var(--green2);border-radius:18px;box-shadow:var(--shadow)}.order-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.order-head h3{margin:4px 0 10px;color:var(--green);font-size:20px}.order-head>strong{color:var(--green);font-size:20px;white-space:nowrap}.order-summary{font-size:13px;color:var(--ink);line-height:1.7;margin:8px 0 12px}.order-message{width:100%;min-height:125px;border:1px solid var(--line);border-radius:12px;padding:12px;background:#f8fbf8;color:var(--ink);font:14px/1.55 system-ui;resize:vertical}.order-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.order-actions .btn{flex:1;min-width:180px}.viber-order{background:#7360f2;color:white;text-decoration:none}.order-help{font-size:12px;color:var(--muted);margin:10px 0 0}@media(max-width:700px){.qty-control{gap:4px}.qty-control button{width:25px;height:25px}.price-row{gap:5px}.order-builder{padding:14px}.order-actions{display:grid}.order-actions .btn{width:100%}}</style>
+.viber-cta{margin:20px 0;padding:17px 19px;border:1px solid #d9d0ff;background:#f4f1ff;border-radius:16px;display:flex;align-items:center;justify-content:space-between;gap:14px}.viber-cta p{margin:0;color:#342b60;font-size:14px;font-weight:650}.viber-cta a{background:#7360f2;color:#fff;text-decoration:none;border-radius:11px;padding:11px 16px;font-weight:800;font-size:13px;white-space:nowrap}.viber-cta a:hover{background:#5b49d6}@media(max-width:700px){.viber-cta{align-items:stretch;flex-direction:column}.viber-cta a{text-align:center}}\n</style>
 </head>
 <body>
 <header class="top"><div class="wrap top-inner"><div class="brand"><div class="brand-mark">🌿</div><div><strong>НАРУЧИ ДОМАЋЕ</strong><small>Велика Плана · Београд</small></div></div><a class="top-link" href="https://invite.viber.com/?g2=AQBzEMpHOYv%2B1VY%2BFr%2FXK1wAQtohrqpwgZQIP%2FNehuBqGI%2BeL0OR9rkG0OYgMZ04" target="_blank" rel="noopener">Viber заједница ↗</a></div></header>
@@ -160,7 +160,7 @@ main{padding-top:16px}
 <article class="product" data-category="other"><img class="product-image" src="https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=900&q=85" alt="Млевени ораси" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><h3>Млевени ораси</h3><div class="farm">Газдинство није повезано у бази</div><div class="price-row"><span>500 г</span><b>600 дин</b></div><div class="price-row"><span>1 кг</span><b>1.200 дин</b></div></article>
 <article class="product" data-category="other"><img class="product-image" src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=85" alt="Рен" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><h3>Рен</h3><div class="farm">Газдинство није повезано у бази</div><div class="price-row"><b>850 дин</b></div></article>
 
-</div><div class="order-builder" id="orderBuilder" hidden><div class="order-head"><div><div class="eyebrow">Ваша поруџбина</div><h3>Изабрали сте производе</h3></div><strong id="orderTotal">0 дин</strong></div><div id="orderSummary" class="order-summary">Изаберите количине производа из понуде.</div><textarea id="orderMessage" class="order-message" readonly aria-label="Текст поруџбине" placeholder="Овде ће се појавити ваша поруџбина."></textarea><div class="order-actions"><button type="button" class="btn primary" id="copyOrder">Копирај поруџбину</button><a class="btn viber-order" href="https://invite.viber.com/?g2=AQBzEMpHOYv%2B1VY%2BFr%2FXK1wAQtohrqpwgZQIP%2FNehuBqGI%2BeL0OR9rkG0OYgMZ04" target="_blank" rel="noopener">Отвори Viber групу ↗</a></div><p class="order-help" id="orderHelp">Када копирате текст, отворите Viber групу и налепите поруџбину као поруку.</p></div><div class="notice">Ценовник је информативан и не потврђује тренутну доступност. Актуелна понуда и пријем поруџбина објављују се у Viber групи.</div></section>
+</div><div class="viber-cta"><p>Желите да поручите? Уђите у Viber групу и оставите поруџбину испод објаве за актуелну туру.</p><a href="https://invite.viber.com/?g2=AQBzEMpHOYv%2B1VY%2BFr%2FXK1wAQtohrqpwgZQIP%2FNehuBqGI%2BeL0OR9rkG0OYgMZ04" target="_blank" rel="noopener">Отвори Viber групу ↗</a></div><div class="notice">Ценовник је информативан и не потврђује тренутну доступност. Актуелна понуда и пријем поруџбина објављују се у Viber групи.</div></section>
 
 <section class="view" id="pickup"><div class="eyebrow">Београд · редовна траса</div><h2>Места преузимања</h2>
 <div class="notice" style="background:#fff0ed;border-color:#f0d2cb;color:#7b3328"><b>ВАЖНО: НЕ ДОНОСИМО ПОРУЏБИНЕ НА КУЋНУ АДРЕСУ</b><p style="margin:7px 0 0">Овај начин превоза функционише тако што производе доносимо до договорених места дуж наше трасе кроз Београд. То није преузимање на кућној адреси. Не долазимо испред улаза у вашу зграду или кућу, не улазимо у зграде, не пењемо се на спратове и не остављамо поруџбине на адресама.</p><p style="margin:9px 0 0">Када у Viber групи објавимо место и време преузимања за вашу туру, потребно је да дођете до возила и лично преузмете своју поруџбину. Преузимање је на паркингу или другој договореној тачки на којој возило може безбедно да стане. Молимо вас да будете тачни, јер се возило креће по планираној рути и не може дуго да чека.</p></div>
@@ -175,44 +175,15 @@ main{padding-top:16px}
 <article class="route"><h3>6. Бежанијска коса и Сурчин</h3><p>Од Тошиног бунара идемо до Лидла код кружног тока на Бежанијској коси и руту завршавамо ка Сурчину.</p></article>
 </div>
 <div class="steps" style="margin-top:16px"><div class="step"><div class="step-num">1</div><b>Поруџбина</b><p>Поруџбине се прикупљају у Viber групи до среде у 22:00 часа. На основу њих се организују припрема и превоз.</p></div><div class="step"><div class="step-num">2</div><b>Договор места и времена</b><p>Купац добија информацију о месту и времену преузимања за конкретну туру.</p></div><div class="step"><div class="step-num">3</div><b>Преузимање код возила</b><p>Купац долази на договорену тачку и преузима поруџбину директно од возила.</p></div></div>
-<div class="notice">Наведена је редовна траса кретања. Тачно време и конкретна места стајања потврђују се за сваку туру. Успутно стајање ван планираних места могуће је по договору ако се уклапа у трасу.</div></section>
+<div class="viber-cta"><p>Поруџбине се шаљу у Viber групи. Уђите у групу и пратите објаву за наредну туру.</p><a href="https://invite.viber.com/?g2=AQBzEMpHOYv%2B1VY%2BFr%2FXK1wAQtohrqpwgZQIP%2FNehuBqGI%2BeL0OR9rkG0OYgMZ04" target="_blank" rel="noopener">Отвори Viber групу ↗</a></div><div class="notice">Наведена је редовна траса кретања. Тачно време и конкретна места стајања потврђују се за сваку туру. Успутно стајање ван планираних места могуће је по договору ако се уклапа у трасу.</div></section>
 
 <footer>Наручи домаће · Велика Плана — Београд</footer>
 </main>
-<nav class="bottom" aria-label="Главна навигација"><button class="active" data-tab="home"><span>⌂</span>Почетна</button><button data-tab="about"><span>🌾</span>Пројекат</button><button data-tab="products"><span>🧺</span>Понуда</button><button data-tab="how"><span>💬</span>Наручивање</button><button data-tab="pickup"><span>📍</span>Преузимање</button></nav>
+<nav class="bottom" aria-label="Главна навигација"><button class="active" data-tab="home"><span>⌂</span>Почетна</button><button data-tab="about"><span>🌾</span>Пројекат</button><button data-tab="products"><span>🧺</span>Понуда</button><button data-tab="how"><span>💬</span>Наручивање</button><button data-tab="pickup"><span>📍</span>Преузимање</button><a href="https://invite.viber.com/?g2=AQBzEMpHOYv%2B1VY%2BFr%2FXK1wAQtohrqpwgZQIP%2FNehuBqGI%2BeL0OR9rkG0OYgMZ04" target="_blank" rel="noopener" aria-label="Отвори Viber групу" style="display:block;text-align:center;text-decoration:none;border-radius:13px;background:#7360f2;color:#fff;padding:7px 2px 6px;font-size:10px;font-weight:850;line-height:1.25"><span style="display:block;font-size:20px;line-height:1.25;margin-bottom:4px">💬</span>Viber</a></nav>
 <script>const tabs=[...document.querySelectorAll('[data-tab]')],views=[...document.querySelectorAll('.view')];
 function openView(id){views.forEach(v=>v.classList.toggle('active',v.id===id));tabs.forEach(t=>t.classList.toggle('active',t.dataset.tab===id));window.scrollTo({top:0,behavior:'smooth'});}
 tabs.forEach(t=>t.addEventListener('click',()=>openView(t.dataset.tab)));
 document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>openView(b.dataset.go)));
 document.querySelectorAll('[data-cat]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-cat]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.product').forEach(p=>p.hidden=b.dataset.cat!=='all'&&p.dataset.category!==b.dataset.cat);}));
-const orderItems=[];
-document.querySelectorAll('.product').forEach(card=>{
- const productName=card.querySelector('h3')?.textContent.trim()||'Производ';
- card.querySelectorAll('.price-row').forEach(row=>{
-  const label=row.querySelector('span')?.textContent.trim()||'По комаду';
-  const priceText=row.querySelector('b')?.textContent||'';
-  const price=Number((priceText.match(/[\d.]+/)||['0'])[0].replace(/\./g,''));
-  const control=document.createElement('div');control.className='qty-control';
-  control.innerHTML='<button type="button" aria-label="Умањи количину">−</button><output aria-live="polite">0</output><button type="button" aria-label="Увећај количину">+</button>';
-  row.appendChild(control);
-  const item={name:productName,label,price,qty:0,output:control.querySelector('output')};orderItems.push(item);
-  const buttons=control.querySelectorAll('button');
-  buttons[0].addEventListener('click',()=>{item.qty=Math.max(0,item.qty-1);updateOrder();});
-  buttons[1].addEventListener('click',()=>{item.qty++;updateOrder();});
- });
-});
-const builder=document.getElementById('orderBuilder'),message=document.getElementById('orderMessage');
-function updateOrder(){
- const chosen=orderItems.filter(x=>x.qty>0),total=chosen.reduce((sum,x)=>sum+x.qty*x.price,0);
- orderItems.forEach(x=>x.output.textContent=x.qty);
- builder.hidden=chosen.length===0;
- document.getElementById('orderTotal').textContent=total.toLocaleString('sr-RS')+' дин';
- document.getElementById('orderSummary').innerHTML=chosen.map(x=>'<div>'+x.name+' — '+x.label+' × '+x.qty+' = <b>'+((x.qty*x.price).toLocaleString('sr-RS'))+' дин</b></div>').join('');
- message.value=chosen.length?'Здраво! Желим да наручим:\n'+chosen.map(x=>'- '+x.name+' ('+x.label+') × '+x.qty+' = '+(x.qty*x.price).toLocaleString('sr-RS')+' дин').join('\n')+'\n\nУкупно: '+total.toLocaleString('sr-RS')+' дин':'';
-}
-document.getElementById('copyOrder').addEventListener('click',async()=>{
- const help=document.getElementById('orderHelp');
- try{await navigator.clipboard.writeText(message.value);help.textContent='Поруџбина је копирана. Сада отворите Viber групу и налепите је у поруку.';}
- catch(e){message.focus();message.select();try{document.execCommand('copy');help.textContent='Поруџбина је копирана. Отворите Viber групу и налепите је.';}catch(_){help.textContent='Означите текст поруџбине и изаберите Копирај, па га налепите у Viber групу.';}}
-});</script>
+</script>
 </body></html>
