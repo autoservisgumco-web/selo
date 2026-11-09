@@ -4,11 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#173f2d">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<meta name="description" content="Наручи домаће из Велике Плане: прича о пројекту, понуда и ценовник, наручивање преко Viber групе и информације о преузимању у Београду.">
+ <meta name="description" content="Наручи домаће из Велике Плане: прича о пројекту, понуда и ценовник, наручивање преко Viber групе и информације о преузимању у Београду.">
 <title>Наручи домаће | Велика Плана – Београд</title>
 <style>
 :root{--green:#173f2d;--green2:#286344;--mint:#eaf2e9;--cream:#faf9f4;--ink:#202b24;--muted:#68756c;--line:#e3e9e1;--gold:#e8bd62;--white:#fff;--shadow:0 8px 28px #173f2d0d}
@@ -74,7 +70,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 0 12px}
 </main>
 <nav class="bottom" aria-label="Главна навигација"><button class="active" data-tab="home"><span>⌂</span>Почетна</button><button data-tab="about"><span>🌾</span>Пројекат</button><button data-tab="products"><span>🧺</span>Понуда</button><button data-tab="how"><span>💬</span>Наручивање</button><button data-tab="pickup"><span>📍</span>Преузимање</button></nav>
 <script>
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
 const tabs=[...document.querySelectorAll('[data-tab]')],views=[...document.querySelectorAll('.view')];
 function openView(id){views.forEach(v=>v.classList.toggle('active',v.id===id));tabs.forEach(t=>t.classList.toggle('active',t.dataset.tab===id));window.scrollTo({top:0,behavior:'smooth'});}
 tabs.forEach(t=>t.addEventListener('click',()=>openView(t.dataset.tab)));
